@@ -216,11 +216,15 @@ button.orange:hover {
 
 .cta-left {
     margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .cta-right {
     margin-right: 40px;
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
