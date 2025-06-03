@@ -251,3 +251,18 @@ button.white:hover {
     border-color: #000;
     color: #000;
 }
+
+/* Styles for the footer */
+
+.footer {
+    display: flex;
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+}
+
+.foot-text {
+    color: #d5d5d5;
+    font-size: 12px;
+}
