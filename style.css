@@ -2,12 +2,17 @@
 
 /* General styles */
 
+html {
+    box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, Helvetica, sans-serif;
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: 100vh;
   gap: 0px;
 }
@@ -17,6 +22,10 @@ a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
+}
+
+a:hover {
+    color: #f16025;
 }
 
 p {
@@ -31,7 +40,6 @@ img.rounded {
 /* Styles for the header */
 
 .header {
-  height: 72px;
   background: #d5d5d5;
   display: flex;
   justify-content: center;
@@ -39,6 +47,7 @@ img.rounded {
 }
 
 .header-box {
+    height: 72px;
     display: flex;
     flex-direction: row;
     flex: none;
@@ -81,26 +90,164 @@ img.rounded {
 p.headline-rev {
     color: #f9faf8;
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 p.secondary-rev {
     color: #e5e7eb;
-    font-size: 15px;
-    font-weight: 400;
-    
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
-button#first {
+button.orange {
     width: 100px;
     padding: 15px;
     margin: 0px;
     background: #f16025;
     border-radius: 10px;
-    border-width: 0;
+    border-width: 2px;
+    border-color: #fff;
     font-weight: 700;
-    color: #fff
+    color: #fff;
+    border-style: solid;
+}
+
+button.orange:hover {
+    background: #fff;
+    color: #f16025;
 }
 
 /* Styles for the information section */
 
+.information {
+  display: flex;
+  justify-content: center;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 800px;
+    padding: 60px 0;
+}
+
+.headline {
+    color: #526b8e;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.cardgrid {
+    display: flex;
+    justify-content: baseline;
+    gap: 30px;
+}
+
+.icon {
+    height: 75px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 175px;
+}
+
+.caption {
+    text-align: center;
+    color: #6e6f71;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Styles for the quote section */
+
+.quote {
+    background: #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    padding: 60px 0;
+}
+
+.quote-text {
+    text-align: left;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote-ref {
+    text-align: right;
+    font-weight: 700;
+}
+
+/* Styles for the CTA section */
+
+.cta {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.cta-box {
+    background: #f16025;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 800px;
+    padding: 40px 0;
+}
+
+.cta-left {
+    margin-left: 40px;
+}
+
+.cta-right {
+    margin-right: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+p.cta1 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+}
+
+p.cta2 {
+    color: #fff;
+}
+
+button.white {
+    width: 100px;
+    padding: 15px;
+    margin: 0px;
+    background: #fff;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #fff;
+    font-weight: 700;
+    color: #f16025;
+    border-style: solid;
+}
+
+button.white:hover {
+    border-color: #000;
+    color: #000;
+}
